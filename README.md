@@ -4,23 +4,23 @@
 Built a complete Star Schema data warehouse in MySQL from raw CSV data including data cleaning, dimensional modeling, fact table creation, and business KPI analysis using advanced SQL (CTEs, window functions, ranking, MoM growth).
 This project demonstrates end-to-end data warehousing using MySQL.
 
-Starting from a raw CSV dataset containing food delivery transactions, we:
+1. Starting from a raw CSV dataset containing food delivery transactions, we:
 
-Loaded and cleaned the data
+2. Loaded and cleaned the data
 
-Removed duplicates
+3. Removed duplicates
 
-Designed and implemented a Star Schema
+4. Designed and implemented a Star Schema
 
-Built fact and dimension tables
+4. Built fact and dimension tables
 
-Applied foreign key relationships
+5. Applied foreign key relationships
 
-Performed business KPI and trend analysis using advanced SQL
+6. Performed business KPI and trend analysis using advanced SQL
 
 The project simulates a real-world food delivery analytics environment similar to Swiggy/Zomato.
 
-🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 MySQL 8.0
 
@@ -32,8 +32,8 @@ Data Cleaning & Transformation
 
 CSV Data Loading (LOAD DATA INFILE)
 
-📂 Project Structure
-1️⃣ Staging Layer
+### 📂 Project Structure
+#### 1️⃣ Staging Layer
 
 Raw CSV loaded into swiggy_data
 
@@ -43,7 +43,7 @@ Data validation (nulls, blanks, duplicates)
 
 Creation of clean table swiggy_data_clean
 
-2️⃣ Data Warehouse Design (Star Schema)
+#### 2️⃣ Data Warehouse Design (Star Schema)
 Dimension Tables
 
 dim_date
@@ -63,7 +63,7 @@ fact_swiggy_orders
 Each dimension contains distinct business keys and surrogate primary keys.
 Fact table stores transactional metrics and links to dimensions via foreign keys.
 
-⭐ Star Schema Model
+####⭐ Star Schema Model
 
 Fact Table:
 
@@ -97,8 +97,8 @@ Category
 
 Dish
 
-📊 KPI & Business Analysis
-Core KPIs
+### 📊 KPI & Business Analysis
+##### Core KPIs
 
 Total Orders
 
@@ -108,7 +108,7 @@ Average Dish Price
 
 Average Rating
 
-Time-Based Analysis
+##### Time-Based Analysis
 
 Monthly Order Trends
 
@@ -118,7 +118,7 @@ Year-wise Growth
 
 Month-over-Month (MoM) %
 
-Location Analysis
+##### Location Analysis
 
 Top Cities by Order Volume
 
@@ -140,13 +140,13 @@ Average Rating by Dish
 
 Rating Distribution
 
-Customer Spend Distribution
+##### Customer Spend Distribution
 
 Spend buckets (Under 100, 100-199, etc.)
 
 Percentage contribution by spend segment
 
-🔥 Key SQL Concepts Used
+### 🔥 Key SQL Concepts Used
 
 LOAD DATA LOCAL INFILE
 
@@ -172,7 +172,7 @@ Foreign Key Constraints
 
 Surrogate Key Design
 
-🧠 Key Learnings
+### 🧠 Key Learnings
 
 Importance of loading DISTINCT values into dimension tables
 
